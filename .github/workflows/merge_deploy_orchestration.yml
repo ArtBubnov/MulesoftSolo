@@ -44,7 +44,7 @@ jobs:
   #this scenario will be executed if the target branch is QA
   #this scenario will run "USES" section github actions workflow
   qa_merge_push:
-    if: contains(github.event.pull_request.base.ref, 'qa')
+    if: ${{ github.ref }} == 'refs/heads/qa'
     #uses: ./.github/workflows/merge_deploy_qa.yml
     runs-on: ubuntu-latest
     steps:
@@ -58,7 +58,7 @@ jobs:
   #this scenario will be executed if the target branch is UAT
   #this scenario will run "USES" section github actions workflow
   uat_merge_push:
-    if: contains(github.event.pull_request.base.ref, 'uat')
+    if: ${{ github.ref }} == 'refs/heads/uat'
     #uses: ./.github/workflows/merge_deploy_uat.yml
     runs-on: ubuntu-latest
     steps:
@@ -72,7 +72,7 @@ jobs:
   #this scenario will be executed if the target branch is STAGING
   #this scenario will run "USES" section github actions workflow
   staging_merge_push:
-    if: contains(github.event.pull_request.base.ref, 'staging')
+    if: ${{ github.ref }} == 'refs/heads/staging'
     #uses: ./.github/workflows/merge_deploy_staging.yml
     runs-on: ubuntu-latest
     steps:
@@ -86,7 +86,7 @@ jobs:
   #this scenario will be executed if the target branch is PROD
   #this scenario will run "USES" section github actions workflow
   prod_merge_push:
-    if: contains(github.event.pull_request.base.ref, 'prod')
+    if: ${{ github.ref }} == 'refs/heads/prod'
     #uses: ./.github/workflows/merge_deploy_prod.yml
     runs-on: ubuntu-latest
     steps:
