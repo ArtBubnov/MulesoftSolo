@@ -1,0 +1,36 @@
+{
+  "configs": [
+    "github_ci_cd_test_01.xml",
+    "global-configuration.xml"
+  ],
+  "secureProperties": [],
+  "redeploymentEnabled": true,
+  "name": "com.mycompany:github_ci_cd_test_01:1.0.0-SNAPSHOT",
+  "minMuleVersion": "4.4.0",
+  "requiredProduct": "MULE_EE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedPackages": [],
+      "exportedResources": [
+        "api/.designer.json",
+        "api/github_ci_cd_test_01.raml",
+        "dev.properties",
+        "dev.secure.properties",
+        "github_ci_cd_test_01.xml",
+        "global-configuration.xml",
+        "log4j2.xml",
+        "prod.properties",
+        "prod.secure.properties",
+        "staging.properties",
+        "staging.secure.properties",
+        "uat.properties",
+        "uat.secure.properties"
+      ]
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}
