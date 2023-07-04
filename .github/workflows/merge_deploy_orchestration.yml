@@ -20,7 +20,9 @@ jobs:
     steps:
       - name: logger
         run: |
-          echo "event is:\r\n"
+          echo "event is:"
+          echo "PUSH"
+          echo "Target branch is:"
           echo $GITHUB_REF_NAME
 
 
