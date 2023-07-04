@@ -30,7 +30,13 @@ jobs:
   #this scenario will run "USES" section github actions workflow
   dev_merge_push:
     if: contains(${{ github.ref.name }}, 'dev')
-    uses: ./.github/workflows/merge_deploy_dev.yml
+  #  uses: ./.github/workflows/merge_deploy_dev.yml    
+    runs-on: ubuntu-latest
+    steps:
+    - name: test
+      run: 
+        echo "DEV"
+
 
 
 
@@ -39,7 +45,12 @@ jobs:
   #this scenario will run "USES" section github actions workflow
   qa_merge_push:
     if: contains(${{ github.ref.name }}, 'qa')
-    uses: ./.github/workflows/merge_deploy_qa.yml
+    #uses: ./.github/workflows/merge_deploy_qa.yml
+    runs-on: ubuntu-latest
+    steps:
+    - name: test
+      run: 
+        echo "QA"
 
 
 
@@ -48,7 +59,12 @@ jobs:
   #this scenario will run "USES" section github actions workflow
   uat_merge_push:
     if: contains(${{ github.ref.name }}, 'uat')
-    uses: ./.github/workflows/merge_deploy_uat.yml
+    #uses: ./.github/workflows/merge_deploy_uat.yml
+    runs-on: ubuntu-latest
+    steps:
+    - name: test
+      run: 
+        echo "UAT"
 
 
 
@@ -57,7 +73,12 @@ jobs:
   #this scenario will run "USES" section github actions workflow
   staging_merge_push:
     if: contains(${{ github.ref.name }}, 'staging')
-    uses: ./.github/workflows/merge_deploy_staging.yml
+    #uses: ./.github/workflows/merge_deploy_staging.yml
+    runs-on: ubuntu-latest
+    steps:
+    - name: test
+      run: 
+        echo "STAGING"
 
 
 
@@ -66,4 +87,9 @@ jobs:
   #this scenario will run "USES" section github actions workflow
   prod_merge_push:
     if: contains(${{ github.ref.name }}, 'prod')
-    uses: ./.github/workflows/merge_deploy_prod.yml
+    #uses: ./.github/workflows/merge_deploy_prod.yml
+    runs-on: ubuntu-latest
+    steps:
+    - name: test
+      run: 
+        echo "PROD"
