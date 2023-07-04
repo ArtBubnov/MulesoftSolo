@@ -31,3 +31,12 @@ jobs:
   dev_merge_push:
     if: contains(${{ github.ref.name }}, 'dev')
     uses: ./.github/workflows/merge_deploy_dev.yml
+
+
+
+
+  #this scenario will be executed if the target branch is QA
+  #this scenario will run "USES" section github actions workflow
+  qa_merge_push:
+    if: contains(${{ github.ref.name }}, 'qa')
+    uses: ./.github/workflows/merge_deploy_qa.yml
