@@ -29,7 +29,7 @@ jobs:
   #this scenario will be executed if the target branch is DEV
   #this scenario will run "USES" section github actions workflow
   dev_merge_push:
-    if: contains(github.event.pull_request.base.ref, 'dev')
+    if: contains(github.event.ref.name, 'dev')
   #  uses: ./.github/workflows/merge_deploy_dev.yml    
     runs-on: ubuntu-latest
     steps:
