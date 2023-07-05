@@ -34,21 +34,21 @@
 				<cloudHubDeployment>
 					<muleVersion>4.4.0</muleVersion>
 					<objectStoreV2>true</objectStoreV2>
-					<username>${env.PLATFORM_USERNAME}</username>
-					<password>${env.PLATFORM_PASSWORD}</password>
+					<username>artemBubnov</username>
+					<password>mg5uGwRQ7XM2MeEb</password>
 					<applicationName>${project.artifactId}-${env}-env</applicationName>
-					<environment>${env.ENV}</environment>
-					<workers>${env.WORKERS}</workers>
-					<workerType>${env.WORKERS_TYPE}</workerType>
-					<region>${env.REGION}</region>
-					<businessGroupId>${env.BUSINESS_GROUP_ID}</businessGroupId>
-					<uri>${env.URI}</uri>
+					<environment>DEV</environment>
+					<workers>1</workers>
+					<workerType>Micro</workerType>
+					<region>eu-central-1</region>
+					<businessGroupId>d6682d22-e052-4a00-92a3-28f04fd486b7</businessGroupId>
+					<uri>https://eu1.anypoint.mulesoft.com</uri>
 					<properties>
-						<prop_01_pom_node>${env.prop_01_pom_var}</prop_01_pom_node>
-						<prop_02_pom_node>${env.prop_02_pom_var}</prop_02_pom_node>
-						<prop_03_pom_node>${env.prop_03_pom_var}</prop_03_pom_node>
-						<prop_04_pom_node>${env.prop_04_pom_var}</prop_04_pom_node>
-						<prop_05_pom_node>${env.prop_05_pom_var}</prop_05_pom_node>
+						<prop_01_pom_node>1</prop_01_pom_node>
+						<prop_02_pom_node>2</prop_02_pom_node>
+						<prop_03_pom_node>3</prop_03_pom_node>
+						<prop_04_pom_node>4</prop_04_pom_node>
+						<prop_05_pom_node>5</prop_05_pom_node>
 					</properties>
 				</cloudHubDeployment>
 				</configuration>
