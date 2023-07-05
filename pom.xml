@@ -35,7 +35,7 @@
 					<muleVersion>4.4.0</muleVersion>
 					<objectStoreV2>true</objectStoreV2>
 					<username>${env.PLATFORM_USERNAME}</username>
-					<password>mg5uGwRQ7XM2MeEb</password>
+					<password>${env.PLATFORM_PASSWORD}</password>
 					<applicationName>${project.artifactId}</applicationName>
 					<environment>DEV</environment>
 					<workers>1</workers>
