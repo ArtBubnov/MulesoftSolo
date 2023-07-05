@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.mycompany</groupId>
-	<artifactId>github-ci-cd-test-01</artifactId>
+	<artifactId>github</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 
-	<name>github-ci-cd-test-01</name>
+	<name>github</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -41,7 +41,7 @@
 					<workers>${env.WORKERS}</workers>
 					<workerType>${env.WORKERS_TYPE}</workerType>
 					<region>${env.REGION}</region>
-					<businessGroupId>5fcc384e-c766-4597-9669-5a9d3f1fbba3</businessGroupId>
+					<businessGroupId>${env.BUSINESS_GROUP_ID}</businessGroupId>
 					<uri>${env.URI}</uri>
 					<properties>
 						<prop_01_pom_node>${env.prop_01_pom_var}</prop_01_pom_node>
