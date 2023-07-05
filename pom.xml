@@ -38,9 +38,9 @@
 					<password>${env.PLATFORM_PASSWORD}</password>
 					<applicationName>${project.artifactId}</applicationName>
 					<environment>${env.ENV}</environment>
-					<workers>1</workers>
-					<workerType>Micro</workerType>
-					<region>eu-central-1</region>
+					<workers>${env.WORKERS}</workers>
+					<workerType>${env.WORKERS_TYPE}</workerType>
+					<region>${env.REGION}</region>
 					<businessGroupId>d6682d22-e052-4a00-92a3-28f04fd486b7</businessGroupId>
 					<uri>https://eu1.anypoint.mulesoft.com</uri>
 					<properties>
