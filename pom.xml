@@ -37,7 +37,7 @@
 					<username>${env.PLATFORM_USERNAME}</username>
 					<password>${env.PLATFORM_PASSWORD}</password>
 					<applicationName>${project.artifactId}</applicationName>
-					<environment>DEV</environment>
+					<environment>${env.ENV}</environment>
 					<workers>1</workers>
 					<workerType>Micro</workerType>
 					<region>eu-central-1</region>
