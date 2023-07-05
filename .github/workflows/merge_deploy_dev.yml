@@ -53,4 +53,4 @@ jobs:
       #This step deploys data to DEV Mulesoft env
       - name: Build with Maven
         #run: mvn install
-        run:  mvn clean deploy "-DmuleDeploy" "-DskipMunitBoolean=true" -s .maven/settings.xml
+        run:  mvn clean deploy "-DmuleDeploy" "-Denv=dev" "-DskipMunitBoolean=true" -s .maven/settings.xml
