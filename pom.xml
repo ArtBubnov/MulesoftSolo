@@ -34,7 +34,7 @@
 				<cloudHubDeployment>
 					<muleVersion>4.4.0</muleVersion>
 					<objectStoreV2>true</objectStoreV2>
-					<username>artemBubnov</username>
+					<username>${env.PLATFORM_USERNAME}</username>
 					<password>mg5uGwRQ7XM2MeEb</password>
 					<applicationName>${project.artifactId}</applicationName>
 					<environment>DEV</environment>
