@@ -36,7 +36,7 @@
 					<objectStoreV2>true</objectStoreV2>
 					<username>artemBubnov</username>
 					<password>mg5uGwRQ7XM2MeEb</password>
-					<applicationName>${project.artifactId}-${env}-env</applicationName>
+					<applicationName>${project.artifactId}</applicationName>
 					<environment>DEV</environment>
 					<workers>1</workers>
 					<workerType>Micro</workerType>
