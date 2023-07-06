@@ -1,3 +1,4 @@
+#this action will be triggered in case a new logic has been pushed to the DEV branch
 name: deploy project to dev env
 
 on:
@@ -31,7 +32,7 @@ jobs:
       prop_05_pom_var: ${{ vars.DEV_PROP_05_POM_VAR_GITHUB_VALUE }}
 
     steps:
-      #This action checks-out your repository under $GITHUB_WORKSPACE
+      #This step checks-out your repository under $GITHUB_WORKSPACE
       - name: Checkout repository
         uses: actions/checkout@v2
 
@@ -53,15 +54,4 @@ jobs:
 
       #This step deploys data to DEV Mulesoft env
       - name: Build with Maven
-        #run: mvn install
-        #run:  mvn clean deploy "-DmuleDeploy" "-Denv=DEV" "-DskipMunitBoolean=true" -s .maven/settings.xml
         run:  mvn clean deploy "-DmuleDeploy"
-#                                "-Dusername=artemBubnov"
-#                                "-Dpassword=mg5uGwRQ7XM2MeEb"
-#                                "-DobjectStoreV2=true"
-#                                "-Denvironment=DEV"
-#                                "-Dworkers=1"
-#                                "-DworkerType=Micro"
-#                                "-DbusinessGroupId=d6682d22-e052-4a00-92a3-28f04fd486b7"
-#                                "-Duri=https://eu1.anypoint.mulesoft.com"
-#                                "-DskipMunitTests=true"
