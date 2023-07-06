@@ -41,8 +41,8 @@
 					<workers>${env.WORKERS}</workers>
 					<workerType>${env.WORKERS_TYPE}</workerType>
 					<region>${env.REGION}</region>
-					<businessGroupId>d6682d22-e052-4a00-92a3-28f04fd486b7</businessGroupId>
-					<uri>https://eu1.anypoint.mulesoft.com</uri>
+					<businessGroupId>${env.BUSINESS_GROUP_ID}</businessGroupId>
+					<uri>${env.URI}</uri>
 					<properties>
 						<prop_01_pom_node>1</prop_01_pom_node>
 						<prop_02_pom_node>2</prop_02_pom_node>
