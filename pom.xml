@@ -44,11 +44,11 @@
 					<businessGroupId>${env.BUSINESS_GROUP_ID}</businessGroupId>
 					<uri>${env.URI}</uri>
 					<properties>
-						<prop_01_pom_node>1</prop_01_pom_node>
-						<prop_02_pom_node>2</prop_02_pom_node>
-						<prop_03_pom_node>3</prop_03_pom_node>
-						<prop_04_pom_node>4</prop_04_pom_node>
-						<prop_05_pom_node>5</prop_05_pom_node>
+						<prop_01_pom_node>${env.prop_01_pom_var}</prop_01_pom_node>
+						<prop_02_pom_node>${env.prop_02_pom_var}</prop_02_pom_node>
+						<prop_03_pom_node>${env.prop_03_pom_var}</prop_03_pom_node>
+						<prop_04_pom_node>${env.prop_04_pom_var}</prop_04_pom_node>
+						<prop_05_pom_node>${env.prop_05_pom_var}</prop_05_pom_node>
 					</properties>
 				</cloudHubDeployment>
 				</configuration>
