@@ -52,5 +52,5 @@ jobs:
             ${{ runner.os }}-maven- 
 
       #This step runs munit tests env
-      - name: Build with Maven
+      - name: STAGING. Run Mulesoft Munit tests
         run:  mvn clean test "-DskipMunitBoolean=false"
