@@ -1,4 +1,5 @@
 #this scenario will be executed in case of creation of a Pull Request
+# TEST TEST TEST
 name: run munits on PR logic
 
 #depends on the target branch one of the following scenarios:
@@ -52,5 +53,5 @@ jobs:
             ${{ runner.os }}-maven- 
 
       #This step runs munit tests env
-      - name: Build with Maven
+      - name: PROD. Run Mulesoft Munit tests
         run:  mvn clean test "-DskipMunitBoolean=false"
